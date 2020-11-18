@@ -1,0 +1,152 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  color: white;
+  margin: 30px;
+}
+
+p{
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  font-size: 23px;
+  margin: 50px;
+  width: 500px;
+  text-align: center;
+  .bold {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.imgh1{
+display: flex;
+flex-direction: row;
+align-items: center;
+  justify-content: center;
+}
+
+.header-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  margin: 30px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 100px;
+  color: white;
+}
+
+.btn-search {
+  background: #5cb8c7;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 45px;
+  margin: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search__input {
+  padding: 5px;
+  padding-left: 20px;
+  margin-top: 30px;
+  background-color: #2a2a44;
+  border-radius: 20px;
+  border: 1px solid gray;
+  width: 200px;
+  color: white;
+  font-size: 20px;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: auto;
+}
+
+.book {
+  height:auto;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+
+  h2 {
+    color: white;
+    font-size: 1.2em;
+    width: 200px;
+    margin: auto;
+  }
+}
+
+.img-container {
+  height: 150px;
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.star {
+  color: #808080;
+}
+
+.bookmark {
+  color: skyblue;
+  display: block;
+}
+.star_container {
+  margin: auto;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.empty_stars{
+  text-align: center;
+}
+
+.full_stars_container {
+  position: absolute;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-top: -18px;
+}
+.full_stars {
+  // transform: translateX(-20px);
+}
+
+fa-icon {
+  margin-top: 10px;
+  font-size: 20px;
+  // text-align: left;
+}
