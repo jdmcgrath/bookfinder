@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { faBookmark, faStar } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBookmark,
+  faStar,
+  faSearch,
+} from '@fortawesome/free-solid-svg-icons';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 
@@ -20,6 +24,7 @@ export class SearchComponent implements OnInit {
   books = [];
   faBookmark = faBookmark;
   faStar = faStar;
+  faSearch = faSearch;
   constructor(private http: HttpClient, private firestore: AngularFirestore) {}
 
   ngOnInit(): void {}

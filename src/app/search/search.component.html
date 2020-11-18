@@ -1,17 +1,25 @@
 <section>
   <header class="header">
     <div class="imgh1">
-    <img class="header-img" src="../../assets/images/reading.svg" alt="" />
-    <h1>bookfinder</h1></div>
-    <p>Whether you're an avid bookworm or a holiday e-book browser, <span class="bold">bookfinder</span> can help you to find your next favourite!
-    Enter your favourite author into the search box down below to find some other reads!</p>
+      <img class="header-img" src="../../assets/images/reading.svg" alt="" />
+      <h1>bookfinder</h1>
+    </div>
+    <p>
+      Whether you're an avid bookworm or a holiday e-book browser,
+      <span class="bold">bookfinder</span> can help you to find your next
+      favourite! Enter your favourite author into the search box down below to
+      find some other reads!
+    </p>
+    <div class="search-container">
     <input
       class="search__input"
       type="text"
       placeholder="Search by Author..."
       [(ngModel)]="searchText"
     />
-    <button class="btn-search" (click)="handleSearch()">Search</button>
+    <button class="btn-search" (click)="handleSearch()">
+      <fa-icon [icon]="faSearch"></fa-icon>
+    </button></div>
   </header>
   <ul class="books">
     <li *ngFor="let book of books" class="book">
@@ -23,12 +31,17 @@
         />
       </div>
       <div *ngIf="book.volumeInfo.averageRating > 0">
-        <div class="star_container"><img
-          class="empty_stars"
-          src="../../assets//images/empty_stars.svg"
-          alt="stars"
-        /></div>
-        <div class="full_stars_container" [style.width.px]="book.volumeInfo.averageRating * 20">
+        <div class="star_container">
+          <img
+            class="empty_stars"
+            src="../../assets//images/empty_stars.svg"
+            alt="stars"
+          />
+        </div>
+        <div
+          class="full_stars_container"
+          [style.width.px]="book.volumeInfo.averageRating * 20"
+        >
           <img
             class="full_stars"
             src="../../assets//images/full_stars.svg"
