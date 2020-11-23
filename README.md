@@ -1,5 +1,5 @@
 # Bookfinder
-<img src="https://bookfinder-dafee.web.app/assets/images/reading.svg" width="100" height="100"/>
+<img src="https://bookfinder-dafee.web.app/assets/images/reading.svg" width="500"/>
 This bookfinder is my first Angular project. It uses google's book API to find the user more books written by an author that they like.
 Using TypeScript and Angular was certainly a vast change from Vanilla JavaScript or React due to TypeScript being Strongly-typed, however I can understand how this may be an advantage in a team-based developing environment.
 
