@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "joebookfinder"
+    }
+  },
+  "defaultProject": "joebookfinder",
+  "cli": {
+    "analytics": "97b5d52c-9090-4080-bca8-21de805d14d1"
+  }
 }

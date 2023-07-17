@@ -39,7 +39,7 @@ export class SearchComponent implements OnInit {
       .toPromise()
       .then((response: GoogleBooksResponse) => {
         const filteredItems = response.items.filter((item) => {
-          return item.volumeInfo.imageLinks.thumbnail;
+          return item.volumeInfo.imageLinks;
         });
         this.books = filteredItems;
       });
