@@ -38,12 +38,14 @@ export class SearchComponent implements OnInit {
       )
       .toPromise()
       .then((response: GoogleBooksResponse) => {
-        this.books = response.items;
-        console.log(this.books);
+        const filteredItems = response.items.filter((item) => {
+          return item.volumeInfo.imageLinks.thumbnail;
+        });
+        this.books = filteredItems;
       });
   }
 
   handleSave(book) {
-    this.firestore.doc(`colleciton/${book.id}`).set(book, { merge: true });
+    this.firestore.doc(`collection/${book.id}`).set(book, { merge: true });
   }
 }
